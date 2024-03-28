@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-    { message: "Enter First no.", type: "number", name: "firstNumber" },
-    { message: "Enter Second no.", type: "number", name: "secondNumber" },
+    { message: "Enter your First no.", type: "number", name: "firstNumber" },
+    { message: "Enter your Second no.", type: "number", name: "secondNumber" },
     {
         message: "Select one of the operators to perform operation",
         type: "list",
@@ -28,3 +28,4 @@ else if (answer.operator === "modulus") {
 else {
     console.log("please select valid operator");
 }
+console.log("THE END");
